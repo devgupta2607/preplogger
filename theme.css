@@ -1,0 +1,125 @@
+/*
+ Styling
+*/
+body {
+  	font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  	color: #333;
+  	font-weight: 300;
+  	padding: 30px;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  	box-sizing: border-box;
+}
+
+/* Reset Select */
+select {
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	-ms-appearance: none;
+  	appearance: none;
+  	outline: 0;
+  	box-shadow: none;
+  	border: 0 !important;
+  	background: #eee;
+  	background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  	display: none;
+}
+/* Custom Select */
+.select {
+  	position: relative;
+  	display: flex;
+  	max-width: 100em;
+  	height: 3em;
+  	line-height: 3;
+  	background: #eee;
+  	overflow: hidden;
+  	/*border-radius: .25em;*/
+}
+select {
+  	flex: 1;
+  	padding: 0 .5em;
+  	color: #555;
+  	cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  	content: '\25BC';
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	padding: 0 1em;
+  	background: #ddd;
+  	cursor: pointer;
+  	pointer-events: none;
+  	-webkit-transition: .25s all ease;
+  	-o-transition: .25s all ease;
+  	transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  	color: #8d8d8d;
+}
+
+.button {
+	border: 0px;
+	background: #eee;
+	padding: 10px;
+	height: 3em;
+	cursor: pointer;
+	border-radius: 4px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.countup, .countup2 {
+  	text-align: center;
+  	/*margin-bottom: 20px;*/
+}
+.countup .timeel, .countup2 .timeel {
+  	display: inline-block;
+  	padding: 5px;
+  	background: #151515;
+  	/*margin: 0;*/
+  	color: white;
+  	min-width: 2.6rem;
+  	/*margin-left: 13px;*/
+  	border-radius: 4px 0 0 4px;
+}
+.countup span[class*="timeRef"], .countup2 span[class*="timeRef"] {
+  border-radius: 0 4px 4px 0;
+  /*margin-left: 0;*/
+  background: #EEE;
+  color: black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
