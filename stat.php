@@ -429,6 +429,8 @@
 				exit;
 			}
 		?>
+		<br/>
+		<center>Contact us at hello@preplogger.com</center>
 	</body>
 		<script type="text/javascript">
 	      	google.load("visualization", "1", {packages:["corechart"]});
@@ -570,6 +572,10 @@
 				    if (xhr.readyState === 4 && xhr.status === 200) {
 				        var json = JSON.parse(xhr.responseText);
 				        console.log(json);
+				        var s = 0;
+				        for (var i = 0; i < 12; i++) {
+				        	s += json[i] / 60;
+				        }
 			        	var data = google.visualization.arrayToDataTable([
 			          		['Month', 'Spend hours'],
 			          		['Jan',  json[0] / 60],
@@ -587,7 +593,7 @@
 			        	]);
 
 			        	var options = {
-			          		title : 'How many hours I spend to listen lectures',
+			          		title : 'How many hours I spend to listen lectures in each month (total ' + s.toFixed(2) + ' hours)',
 			          		vAxis: {title: ''},
 			          		hAxis: {title: 'Month'},
 			          		seriesType: 'bars',
@@ -650,6 +656,11 @@
 				    if (xhr.readyState === 4 && xhr.status === 200) {
 				        var json = JSON.parse(xhr.responseText);
 				        console.log(json);
+				        var s = 0, p = 0;
+				        for (var i = 0; i < 12; i++) {
+				        	s += json[2 * i] / 60;
+				        	p += json[2 * i + 1];
+				        }
 			        	var data = google.visualization.arrayToDataTable([
 			          		['Month', 'Spend hours', 'Solved Problems'],
 			          		['Jan',  json[0] / 60, json[1]],
@@ -667,7 +678,7 @@
 			        	]);
 
 			        	var options = {
-			          		title : 'How many hours I spend in each month? How many problems I solved in each month?',
+			          		title : 'Hours that I spend in each month (total ' + s + ' hours) \n Number of problems that I solved in each month (total ' + p + ' problems are solved)',
 			          		vAxis: {title: ''},
 			          		hAxis: {title: 'Month'},
 			          		seriesType: 'bars',

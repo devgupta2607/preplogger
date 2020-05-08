@@ -349,6 +349,8 @@
 				exit;
 			}
 		?>
+		<br/>
+		<center>Contact us at hello@preplogger.com</center>
 	</body>
 		<script type="text/javascript">
 	      	var cntOne = 0, cntTwo = 0, cntThree = 0;

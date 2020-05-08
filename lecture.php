@@ -172,6 +172,8 @@
 				exit;
 			}
 		?>
+		<br/><br/><br/>
+		<center>Contact us at hello@preplogger.com</center>
 	</body>
 		<script type="text/javascript">
 	      	

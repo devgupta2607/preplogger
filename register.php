@@ -184,7 +184,7 @@
 									<br/>
 									<center>
 										<h2 style="color: white; font-weight: 900;">
-											Prep<span style="color: #63d7cb;">Tracker</span>
+											Prep<span style="color: #63d7cb;">Logger</span>
 										</h2>
 									</center>
 								</td>
@@ -286,5 +286,7 @@
 				</tr>
 			</table>
 		</form>
+		<br/>
+		<center>Contact us at hello@preplogger.com</center>
 	</body>
 </html>
