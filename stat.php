@@ -5,12 +5,12 @@
 		<link rel="stylesheet" type="text/css" href="theme.css">
 	</head>
 	<body>
-		<img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" />
+		<!-- <img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" /> -->
 		<?php
 			session_start();
 			if (isset($_SESSION['id'])) {
 		?>
-		<table style="width: 80%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
+		<table style="width: 100%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);" border="0" cellpadding="20" cellspacing="0" align="center">
@@ -35,17 +35,17 @@
 			</tr>
 		</table>
 		<br/>
-		<p style="font-size: 2em; font-weight: 100; position: relative; left: 10%;">
+		<p style="font-size: 2em; font-weight: 100; position: relative;">
 			<?php
 				$monthNum = date("m");
 			?>
 			<strong><?php echo date("d");?></strong> <?php echo date('F', mktime(0, 0, 0, $monthNum, 10)) . ", 20" . date("y");?>
 		</p>
-		<p style="font-size: 1em; font-weight: 100; position: relative;left: 10%; top: -15px; color: #777;">
+		<p style="font-size: 1em; font-weight: 100; position: relative; top: -15px; color: #777;">
 		    Hello, <strong><?php echo $_SESSION['username'];?> </strong> &#128075; 
 		<br/>
-		<h2 style="font-weight: 100; position: relative; left: 10%;">Preparation History</h2>
-		<table cellpadding="10" cellspacing="10" style="width: 80%;" align="center">
+		<h2 style="font-weight: 100; position: relative; ">Preparation History</h2>
+		<table cellpadding="10" cellspacing="10" style="width: 100%;" align="center">
 			<tr>
 				<td style="background: #ffecb3; border-radius: 8px;">
 				    <p>Problem solved</p>
@@ -75,7 +75,7 @@
 			</tr>
 		</table>
 		<br/>
-		<table style="width: 80%; border-collapse: collapse; border: 1px solid #ccc;" border="0" cellpadding="10" align="center">
+		<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;" border="0" cellpadding="10" align="center">
 			<tr>
 				<td width="8.3%">January</td>
 				<td width="8.3%">February</td>
@@ -91,7 +91,7 @@
 				<td width="8.3%">December</td>
 			</tr>
 		</table>
-		<table style="width: 80%; border-collapse: collapse; border: 1px solid #eee;
+		<table style="width: 100%; border-collapse: collapse; border: 1px solid #eee;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);" border="1" cellpadding="10" align="center">
@@ -353,8 +353,8 @@
 		</table>
 		<br/>
 		<br/>
-		<h2 style="font-weight: 100; position: relative; left: 10%;">Statistics by problem diffculcy</h2>
-		<table style="width: 80%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
+		<h2 style="font-weight: 100; position: relative; ">Statistics by problem diffculcy</h2>
+		<table style="width: 100%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
 			<tr>
 				<td style="width: 50%; border-radius: 8px; border: 1px solid #eee;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
@@ -371,8 +371,8 @@
 			</tr>
 		</table>
 		<br/>
-		<h2 style="font-weight: 100; position: relative; left: 10%;">Problem solved and time spend each month</h2>
-		<table style="width: 80%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
+		<h2 style="font-weight: 100; position: relative; ">Problem solved and time spend each month</h2>
+		<table style="width: 100%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
 			<tr>
 				<td style="width: 50%; border-radius: 8px; border: 1px solid #eee;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
@@ -388,8 +388,8 @@
 				</td>
 			</tr>
 		</table>
-		<h2 style="font-weight: 100; position: relative; left: 10%;">Interiew statistics</h2>
-		<table style="width: 80%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
+		<h2 style="font-weight: 100; position: relative; ">Interiew statistics</h2>
+		<table style="width: 100%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
 			<tr>
 				<td style="width: 50%; border-radius: 8px; border: 1px solid #eee;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
@@ -406,8 +406,8 @@
 			</tr>
 		</table>
 		<br/>
-		<h2 style="font-weight: 100; position: relative;left: 10%;">Lecture / Tutorial listening</h2>
-		<table style="width: 80%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
+		<h2 style="font-weight: 100; position: relative;">Lecture / Tutorial listening</h2>
+		<table style="width: 100%; border: 0px solid #ccc;" border="0" align="center" cellspacing="20">
 			<tr>
 				<td style="width: 50%; border-radius: 8px; border: 1px solid #eee;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);

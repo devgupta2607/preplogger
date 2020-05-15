@@ -48,7 +48,7 @@
 		$result = $conn->query($sql);
 		$s = 0;
 
-		echo "<table style='width: 80%; border-collapse: collapse; border: 1px solid #ccc;  border-top-left-radius: 8px; border-top-right-radius: 8px; -webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); -moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);' cellpadding='10' border='0' cellspacing='0' align='center'>";
+		echo "<table style='width: 100%; border-collapse: collapse; border: 1px solid #ccc;  border-top-left-radius: 8px; border-top-right-radius: 8px; -webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); -moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);' cellpadding='10' border='0' cellspacing='0' align='center'>";
 		echo "<th style='background: #EEE; border-top-left-radius: 8px;'>Lecture / Topic area</th>";
 		echo "<th style='background: #EEE; border-top-right-radius: 8px;'>Hours spend</th>";
 		if ($result->num_rows > 0) {
@@ -62,7 +62,7 @@
 		    }
 		} 
 		echo "<br/>";
-		echo "<table align='right' style='position: relative; right: 10%; width: 80%;' border='0'>";
+		echo "<table align='right' style='position: relative; width: 80%;' border='0'>";
 		echo "	<tr>";
 		echo "		<td>";
 		echo "			<div style='float: right;'>";

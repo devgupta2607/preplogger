@@ -4,12 +4,12 @@
 		<link rel="stylesheet" type="text/css" href="theme.css">
 	</head>
 	<body>
-		<img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" />
+		<!-- <img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" /> -->
 		<?php
 			session_start();
 			if (isset($_SESSION['id'])) {
 		?>
-		<table style="width: 80%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
+		<table style="width: 100%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);" border="0" cellpadding="20" cellspacing="0" align="center">
@@ -35,19 +35,19 @@
 		</table>
 		<br/>
 
-		<p style="font-size: 2em; font-weight: 100; position: relative; left: 10%;">
+		<p style="font-size: 2em; font-weight: 100; position: relative;">
 			<?php
 				$monthNum = date("m");
 			?>
 			<strong><?php echo date("d");?></strong> <?php echo date('F', mktime(0, 0, 0, $monthNum, 10)) . ", 20" . date("y");?>
 		</p>
-		<p style="font-size: 1em; font-weight: 100; position: relative;left: 10%; top: -15px; color: #777;">
+		<p style="font-size: 1em; font-weight: 100; position: relative; top: -15px; color: #777;">
 		    Hello, <strong><?php echo $_SESSION['username'];?> </strong> &#128075; 
 		</p>
 		<br/>
 		<div id="passedInterviews">
 	
-			<table style="width: 80%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; 
+			<table style="width: 100%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; 
 							-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 							-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 							box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);" cellpadding="10" border="0" cellspacing="0" align="center">
@@ -113,7 +113,7 @@
 					$conn->close();
 				?>
 			</table>
-			<table align="right" cellspacing="10" cellpadding="10" style="position: relative; right: 10%;">
+			<table align="right" cellspacing="10" cellpadding="10" style="position: relative;">
 				<tr>
 					<td><p style="font-size: 3em; font-weight: 100;"><strong><?php echo $time;?></strong></p><p style="color: #999; position: relative; top: -2.5em;">spend hours</p></td>
 					<td><p style="font-size: 3em; font-weight: 100;"><strong><?php echo $cnt;?></strong></p><p style="color: #999; position: relative; top: -2.5em;">interviews</p></td>
@@ -132,7 +132,7 @@
 			</table>
 		</div>
 		<br/><br/>
-		<table style="width: 80%; border-radius: 8px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#44a08d+0,093637+100 */
+		<table style="width: 100%; border-radius: 8px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#44a08d+0,093637+100 */
 					background: #44a08d; /* Old browsers */
 					background: -moz-linear-gradient(top,  #44a08d 0%, #093637 100%); /* FF3.6-15 */
 					background: -webkit-linear-gradient(top,  #44a08d 0%,#093637 100%); /* Chrome10-25,Safari5.1-6 */

@@ -4,12 +4,12 @@
 	    <link rel="stylesheet" type="text/css" href="theme.css">
 	</head>
 	<body>
-		<img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" />
+		<!-- <img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" /> -->
 		<?php
 			session_start();
 			if (isset($_SESSION['id'])) {
 		?>
-		<table style="width: 80%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
+		<table style="width: 100%; border: 0px; border: 0px solid #ddd; border-radius: 8px; background: #fff;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);" border="0" cellpadding="20" cellspacing="0" align="center">
@@ -34,20 +34,20 @@
 			</tr>
 		</table>
 		<br/>
-		<p style="font-size: 2em; font-weight: 100; position: relative; left: 10%;">
+		<p style="font-size: 2em; font-weight: 100; position: relative;">
 			<?php
 				$monthNum = date("m");
 			?>
 			<strong><?php echo date("d");?></strong> <?php echo date('F', mktime(0, 0, 0, $monthNum, 10)) . ", 20" . date("y");?>
 		</p>
-		<p style="font-size: 1em; font-weight: 100; position: relative;left: 10%; top: -15px; color: #777;">
+		<p style="font-size: 1em; font-weight: 100; position: relative; top: -15px; color: #777;">
 		    Hello, <strong><?php echo $_SESSION['username'];?> </strong> &#128075;
 		</p>
-		<a style="font-weight: 100; position: relative; left: 10%; text-decoration: none; color: #777;" href="lecture.php">< go back</a>
+		<a style="font-weight: 100; position: relative; text-decoration: none; color: #777;" href="lecture.php">< go back</a>
 		<br/>
 		<br/>
 		<div id="topic_area">
-			<table border="0" width="80%" cellpadding="10" cellspacing="10" align="center">
+			<table border="0" width="100%" cellpadding="10" cellspacing="10" align="center">
 				<?php
 					$servername = "localhost";
 					$username = "root";
@@ -88,9 +88,9 @@
 		</div>
 		<br/>
 		<center>
-			<input type="text" placeholder="Type your topic name" style="width: 80%; padding: 15px; border-radius: 4px; border: 1px solid #CCC;" id="topicTxt" />
+			<input type="text" placeholder="Type your topic name" style="width: 100%; padding: 15px; border-radius: 4px; border: 1px solid #CCC;" id="topicTxt" />
 			<br/><br/>
-			<button style="padding: 15px; width: 80%; border-radius: 4px; color: #555;
+			<button style="padding: 15px; width: 100%; border-radius: 4px; color: #555;
 					background: #EEE; border: 1px solid #CCC;
 					-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 					-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);

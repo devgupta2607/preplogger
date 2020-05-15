@@ -155,14 +155,14 @@
 	    <link rel="stylesheet" type="text/css" href="theme.css">
 	</head>
 	<body style="background: #EEE;">
-		<img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" />
-		<br/><br/><br/>
+		<!-- <img src="imgs/bg3.png" style="position: absolute; top: 0px; z-index: -1; height: 50%;" /> -->
+		<!-- <br/><br/><br/> -->
 		<form action="signInController.php" method="post">
-			<table align="center" width="60%" border="0" style="
+			<table align="center" width="100%" border="0" style="
 						-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 						-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 						box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
-						border-radius: 10px; background: rgba(255, 255, 255, 0.2);" cellspacing="0" cellpadding="20">
+						border-radius: 10px; background: rgba(255, 255, 255, 0.2); height: 100%;" cellspacing="0" cellpadding="20">
 				<tr>
 					<td width="50%" style="-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 											-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
@@ -173,40 +173,42 @@
 											background: -webkit-linear-gradient(top,  #44a08d 0%,#093637 100%); /* Chrome10-25,Safari5.1-6 */
 											background: linear-gradient(to bottom,  #44a08d 0%,#093637 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 											filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44a08d', endColorstr='#093637',GradientType=0 ); /* IE6-9 */">
-						<table>
-							<tr>
-								<td valign="top">
-									<center><img src="imgs/icon.png" style="width: 150px; border: 2px dashed #63d7cb; padding: 10px; border-radius: 100px;" /></center>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<br/>
-									<center>
-										<h2 style="color: white; font-weight: 900;">
-											Prep<span style="color: #63d7cb;">Logger</span>
-										</h2>
-									</center>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<!-- <p style="color: white; font-size: 10em;">
-										&ldquo;
-									</p> -->
-
+						<center>	
+							<table>
+								<tr>
+									<td valign="top">
+										<center><img src="imgs/icon.png" style="width: 150px; border: 2px dashed #63d7cb; padding: 10px; border-radius: 100px;" /></center>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<br/>
 										<center>
-											<p style="color: white; font-weight: 100; color: #DDD; width: 90%;">
-												Discipline is the bridge between goals and accomplishment.
-											</p>
-											<hr style="width: 30%; border: 0px; border-bottom: 1px solid #FFF;"/>
-											<p style="color: white; font-weight: 100; color: #DDD; width: 90%;">
-												~Jim Rohn
-											</p>
+											<h2 style="color: white; font-weight: 900;">
+												Prep<span style="color: #63d7cb;">Logger</span>
+											</h2>
 										</center>
-								</td>
-							</tr>
-						</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<!-- <p style="color: white; font-size: 10em;">
+											&ldquo;
+										</p> -->
+
+											<center>
+												<p style="color: white; font-weight: 100; color: #DDD; width: 90%;">
+													Discipline is the bridge between goals and accomplishment.
+												</p>
+												<hr style="width: 30%; border: 0px; border-bottom: 1px solid #FFF;"/>
+												<p style="color: white; font-weight: 100; color: #DDD; width: 90%;">
+													~Jim Rohn
+												</p>
+											</center>
+									</td>
+								</tr>
+							</table>
+						</center>
 						
 					</td>
 					<td>

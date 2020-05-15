@@ -32,7 +32,7 @@
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 
-		echo "<table style='width: 80%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; 
+		echo "<table style='width: 100%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; 
 								-webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 								-moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);
 								box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);' cellpadding='10' border='0' cellspacing='0' align='center' >";
@@ -89,7 +89,7 @@
 
 		echo "</table>";
 		      	
-		echo "<table align='right' cellspacing='10' cellpadding='10' style='position: relative; right: 10%;'>";
+		echo "<table align='right' cellspacing='10' cellpadding='10' style='position: relative; '>";
 		echo "	<tr>";
 		echo "		<td><p style='font-size: 3em; font-weight: 100;'><strong>" . $time . "</strong></p><p style='color: #999; position: relative; top: -2.5em;'>spend hours</p></td>";
 		echo "			<td><p style='font-size: 3em; font-weight: 100;'><strong>" . $cnt . "</strong></p><p style='color: #999; position: relative; top: -2.5em;'>interviews</p></td>";

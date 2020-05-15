@@ -37,7 +37,7 @@
 		$time = 0;
 
 		echo "<div id='solvedProblems'>";
-		echo "<table style='width: 80%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; -webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); -moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);' cellpadding='10' border='0' cellspacing='0' align='center'>";
+		echo "<table style='width: 100%; border: 1px solid #ccc; border-top-left-radius: 8px; border-top-right-radius: 8px; -webkit-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1); -moz-box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);box-shadow: 7px 7px 29px -11px rgba(170,170,170,1);' cellpadding='10' border='0' cellspacing='0' align='center'>";
 		echo "	<th>Problem level</th>";
 		echo "	<th>Problem tag</th>";
 		echo "	<th>Time to find a solution</th>";
@@ -77,7 +77,7 @@
 		}
 		$conn->close();
 		echo "</table>";
-		echo "<table align='right' cellspacing='10' cellpadding='10' style='position: relative; right: 10%;'>";
+		echo "<table align='right' cellspacing='10' cellpadding='10' style='position: relative;'>";
 		echo "	<tr>";
 		echo "		<td>";
 		echo "			<p style='font-size: 2em; font-weight: 100;'><strong>" . number_format(($time / 60), 2) . "</strong> hour</p><p style='color: #999; position: relative; top: -2em;''>spend hours</p>";

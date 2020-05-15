@@ -49,7 +49,7 @@
 
 		$i = 0;
 		
-		echo "<table border='0' width='80%'' cellpadding='10' cellspacing='10' align='center'>";
+		echo "<table border='0' width='100%'' cellpadding='10' cellspacing='10' align='center'>";
 
 		if ($result->num_rows > 0) {
 			$del = 4;
